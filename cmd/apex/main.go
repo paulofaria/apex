@@ -29,6 +29,7 @@ import (
 	// plugins
 	_ "github.com/apex/apex/plugins/env"
 	_ "github.com/apex/apex/plugins/golang"
+	_ "github.com/apex/apex/plugins/swift"
 	_ "github.com/apex/apex/plugins/hooks"
 	_ "github.com/apex/apex/plugins/inference"
 	_ "github.com/apex/apex/plugins/java"

@@ -46,6 +46,7 @@ var defaultPlugins = []string{
 	"inference",
 	"hooks",
 	"golang",
+	"swift",
 	"python",
 	"nodejs",
 	"java",
