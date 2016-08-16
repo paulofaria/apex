@@ -18,7 +18,7 @@ const (
 // Plugin implementation.
 type Plugin struct{}
 
-// Open adds the shim and golang defaults.
+// Open adds the shim and swift defaults.
 func (p *Plugin) Open(fn *function.Function) error {
 	if fn.Runtime != Runtime {
 		return nil
