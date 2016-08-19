@@ -7,6 +7,7 @@ import (
 
 	"github.com/apex/apex/function"
 	"github.com/apex/apex/plugins/golang"
+	"github.com/apex/apex/plugins/swift"
 	"github.com/apex/apex/plugins/java"
 	"github.com/apex/apex/plugins/nodejs"
 	"github.com/apex/apex/plugins/python"
@@ -18,6 +19,7 @@ func init() {
 			"main.py":             python.Runtime,
 			"index.js":            nodejs.Runtime43,
 			"main.go":             golang.Runtime,
+			"main.swift":          swift.Runtime,
 			"target/apex.jar":     java.Runtime,
 			"build/libs/apex.jar": java.Runtime,
 		},

@@ -1,6 +1,5 @@
 {
   "name": "swift",
-  "runtime": "swift",
   "description": "Swift example project",
   "role": "arn:aws:iam::293503197324:role/apex_lambda_function"
 }
