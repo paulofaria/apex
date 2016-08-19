@@ -23,7 +23,7 @@ func init() {
 
 var functions = make(map[string]bool)
 
-var libraries = []string {
+var libraries = []string{
 	"libswiftCore.so",
 	"libFoundation.so",
 	"libicudata.so.52",
@@ -104,7 +104,7 @@ func getFile(fileName string) (*os.File, error) {
 			return nil, err
 		}
 
-		file, err = download(fileName, file)
+		file, err = downloadFile(fileName, file)
 
 		if err != nil {
 			return nil, err
@@ -116,7 +116,7 @@ func getFile(fileName string) (*os.File, error) {
 	return os.Open(path)
 }
 
-func download(fileName string, file *os.File) (*os.File, error) {
+func downloadFile(fileName string, file *os.File) (*os.File, error) {
 	url := "https://raw.githubusercontent.com/paulofaria/swift-binaries/master/" + fileName
 
 	response, err := http.Get(url)
